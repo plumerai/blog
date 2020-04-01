@@ -1,0 +1,7 @@
+baseURL = "https://blog.plumerai.com/"
+languageCode = "en-us"
+title = "Plumerai Blog"
+theme = "plumerai-blog"
+
+[permalinks]
+  blog = ":year/:month/:filename/"

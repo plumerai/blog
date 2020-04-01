@@ -1,0 +1,129 @@
+:root {
+    --color-black: #333;
+    --color-gray-light: #f2f6f7;
+    --color-gray-medium: #a2a4a6;
+    --color-larq-blue: #0A1D3C;
+    --color-plumerai-blue: #76c7f4;
+}
+
+body {
+    color: var(--color-black);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+a {
+    color: var(--color-larq-blue);
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.centered-column {
+    max-width: 40rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--color-gray-light);
+    padding: 3rem 0;
+}
+
+.header>div {
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    padding-bottom: 0.4rem;
+}
+
+.header h1>a {
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header a {
+    border-bottom: none;
+}
+
+.content {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.content img {
+    width: 100%;
+}
+
+.content img.hero {
+    margin-bottom: 2rem;
+}
+
+.content h1>a {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.content h2 {
+    color: var(--color-gray-medium);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.content p.date {
+    color: var(--color-gray-medium);
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.content p {
+    line-height: 1.4rem;
+}
+
+.content a {
+    font-weight: 400;
+    border-bottom: 0.1em solid var(--color-plumerai-blue);
+    display: inline-block;
+    line-height: 0.9em;
+    text-shadow: 0.1em 0.1em white, 0.1em -0.1em white, -0.1em 0.1em white, -0.1em -0.1em white;
+}
+
+.content a:hover {
+    border-bottom: 0.1em solid var(--color-larq-blue);
+}
+
+.content a:visited {
+    color: var(--color-larq-blue);
+}
+
+@media screen and (max-width: 30rem) {
+    .header {
+        padding: 2rem 0;
+    }
+    .header img {
+        height: 2.5rem;
+    }
+    .header h1 {
+        padding-bottom: 0.7rem;
+        line-height: 1.7rem;
+    }
+    .header h1>a {
+        font-size: 1.4rem;
+    }
+    .content h1>a {
+        border-bottom: none;
+        line-height: 1.2em;
+    }
+}

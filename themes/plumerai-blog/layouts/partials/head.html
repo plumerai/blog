@@ -1,0 +1,37 @@
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+
+    <!-- Homepage -->
+    {{ if .IsHome }}
+    <title>{{ .Site.Title }}</title>
+    <meta name="title" content="{{ .Site.Title }}">
+    <meta property="og:title" content="{{ .Site.Title }}">
+    <meta property="twitter:title" content="{{ .Site.Title }}">
+
+    {{ $description := "News and updates about Plumerai."}}
+    <meta name="description" content="{{ $description }}">
+    <meta property="og:description" content="{{ $description }}">
+    <meta property="twitter:description" content="{{ $description }}">
+
+    <meta property="og:image" content="{{ .Site.BaseURL}}images/larq-hero.png">
+    <meta property="twitter:image" content="{{ .Site.BaseURL }}images/larq-hero.png">
+
+    <!-- Individual blog posts -->
+    {{ else }}
+    <title>{{ .Page.Title }} | {{ .Site.Title }}</title>
+    <meta name="title" content="{{ .Page.Title }} | {{ .Site.Title }}">
+    <meta property="og:title" content="{{ .Page.Title }} | {{ .Site.Title }}">
+    <meta property="twitter:title" content="{{ .Page.Title }} | {{ .Site.Title }}">
+
+    <meta name="description" content="{{ .Page.Params.socialDescription }}">
+    <meta property="og:description" content="{{ .Page.Params.socialDescription }}">
+    <meta property="twitter:description" content="{{ .Page.Params.socialDescription }}">
+
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Page.Params.socialImage }}">
+    <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Page.Params.socialImage }}">
+    {{ end }}
+</head>
