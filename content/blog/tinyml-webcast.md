@@ -17,7 +17,7 @@ This week, we gave a presentation as part of the tinyML Talks webcast series whe
 
 Our BNN models with our proprietary inference software are faster and more accurate on ARM Cortex-M4 microcontrollers than the best publicly available 8-bit deep learning models with TensorFlow Lite for Microcontrollers.
 
-{{< figure src="/images/cortex-m4-hero.svg" >}}
+{{< figure src="/images/tinyml/cortex-m4-hero.svg" >}}
 
 We quickly found out that great training algorithms and inference software are not enough when building a solution for the real world. Collecting and labeling our own data turned out to be crucial in dealing with a wide variety of difficulties.
 
