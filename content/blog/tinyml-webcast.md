@@ -1,11 +1,11 @@
 ---
 title: "tinyML Talks: Binarized Neural Networks on microcontrollers"
-subtitle: "Running Binarized Neural Networks on microcontrollers"
+subtitle: ""
 heroImage: ""
 date: 2021-01-22T12:09:02+01:00
 draft: false
 socialTitle: "tinyML Talks: Binarized Neural Networks on microcontrollers"
-socialDescription: "Running Binarized Neural Networks on microcontrollers"
+socialDescription: "We demonstrated how combining our custom training algorithms, inference software stack and datasets results in a highly accurate and efficient solution - in this case for person presence detection on the STM32L4R9, an ARM Cortex-M4 microcontroller from STMicroelectronics."
 socialImage: "/images/tinyml/hero-image.png"
 ---
 
