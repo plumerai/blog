@@ -41,4 +41,4 @@ We're just scratching the surface with person detection and we have a lot more i
 
 We are very happy with the high attendance during the live webcast and a ton of questions were submitted during the Q&A. There was no time to answer all of them live, so we shared our answers on the [tinyML forum](https://forums.tinyml.org/t/tinyml-talks-on-january-19-2021-running-binarized-neural-networks-on-microcontrollers-by-lukas-geiger/485) and we’ll be sharing more of our progress at the tinyML Summit in March.
 
-If you’re thinking about using Binarized Neural Networks to enable highly accurate deep learning on microcontrollers, [get in touch](mailto:hello@plumerai.com?)!
+If you’re thinking about using Binarized Neural Networks to enable highly accurate deep learning on microcontrollers, [get in touch](https://plumerai.com/)!
