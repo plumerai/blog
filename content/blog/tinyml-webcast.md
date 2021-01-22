@@ -3,7 +3,7 @@ title: "tinyML Talks: Binarized Neural Networks on microcontrollers"
 subtitle: "Running Binarized Neural Networks on microcontrollers"
 heroImage: ""
 date: 2021-01-22T12:09:02+01:00
-draft: true
+draft: false
 socialTitle: "tinyML Talks: Binarized Neural Networks on microcontrollers"
 socialDescription: "Running Binarized Neural Networks on microcontrollers"
 socialImage: ""
