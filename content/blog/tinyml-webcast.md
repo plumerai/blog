@@ -6,7 +6,7 @@ date: 2021-01-22T12:09:02+01:00
 draft: false
 socialTitle: "tinyML Talks: Binarized Neural Networks on microcontrollers"
 socialDescription: "We demonstrated how combining our custom training algorithms, inference software stack and datasets results in a highly accurate and efficient solution."
-socialImage: "/images/tinyml/hero-image.png"
+socialImage: "images/tinyml/hero-image.png"
 ---
 
 For the past few months we have been working very hard on something new: Binarized Neural Networks on microcontrollers. By bringing deep learning to cheap, low-power microcontrollers we remove price and energy barriers and make it possible to embed AI into basically any device, even for relatively complex tasks such as person detection.
