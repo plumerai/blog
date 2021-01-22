@@ -6,7 +6,7 @@ date: 2020-04-01T16:00:00+02:00
 draft: false
 socialTitle: "XMOS and Plumerai partner to accelerate commercialisation of binarized neural networks"
 socialDescription: "XMOS and Plumerai bring together their deep learning expertise across chip design and algorithms in a Binarized Neural Network capability, advancing the deployment of intelligence at the edge."
-socialImage: "/images/larq-hero.png"
+socialImage: "images/larq-hero.png"
 ---
 
 **XMOS and Plumerai bring together their deep learning expertise across chip design and algorithms in a Binarized Neural Network capability, advancing the deployment of intelligence at the edge.**
