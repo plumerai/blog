@@ -6,7 +6,7 @@ date: 2020-03-24
 draft: false
 socialTitle: "The Larq Ecosystem"
 socialDescription: "State-of-the-art binarized neural networks and even faster inference"
-socialImage: "/images/larq-hero.png"
+socialImage: "images/larq-hero.png"
 ---
 
 In our [previous blog post](https://blog.larq.dev/2020/02/announcing-larq-compute-engine/), we announced [Larq Compute Engine](https://docs.larq.dev/compute-engine/) (LCE), our deployment solution for Binarized Neural Networks (BNNs).
