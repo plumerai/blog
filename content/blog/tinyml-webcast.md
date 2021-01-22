@@ -33,7 +33,7 @@ Testing our models thoroughly is equally important. Instead of relying only on s
 
 Bringing all of this together results in a highly robust and efficient solution for person presence detection, as we showed in our [live demo](https://youtu.be/f9SNqDejOB0?t=2556).
 
-![Live Demo of Person Detection running on Cortex-M4 microcontroller](/images/tinyml/demo.png).
+![Live Demo of Person Detection running on Cortex-M4 microcontroller](/images/tinyml/demo.png)
 
 We're just scratching the surface with person detection and we have a lot more in store for the coming months - more applications on Arm Cortex-M microcontrollers, and even better performance with our own IP-core for BNN inference on low-powered FPGAs and with the xcore.ai platform from XMOS.
 
