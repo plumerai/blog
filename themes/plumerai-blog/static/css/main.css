@@ -1,25 +1,75 @@
+@font-face {
+    font-family: "FK Grotesk";
+    font-style: normal;
+    font-weight: 100;
+    src: url("/fonts/FKGrotesk-Thin.woff2") format("woff2"),
+        url("/fonts/FKGrotesk-Thin.woff") format("woff"),
+        url("/fonts/FKGrotesk-Thin.ttf") format("truetype");
+}
+@font-face {
+    font-family: "FK Grotesk";
+    font-style: italic;
+    font-weight: 100;
+    src: url("/fonts/FKGrotesk-ThinItalic.woff2") format("woff2"),
+        url("/fonts/FKGrotesk-ThinItalic.woff") format("woff"),
+        url("/fonts/FKGrotesk-ThinItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "FK Grotesk";
+    font-style: normal;
+    font-weight: 300;
+    src: url("/fonts/FKGrotesk-Light.woff2") format("woff2"),
+        url("/fonts/FKGrotesk-Light.woff") format("woff"),
+        url("/fonts/FKGrotesk-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "FK Grotesk";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/fonts/FKGrotesk-Regular.woff2") format("woff2"),
+        url("/fonts/FKGrotesk-Regular.woff") format("woff"),
+        url("/fonts/FKGrotesk-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "FK Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fonts/FKGrotesk-Medium.woff2") format("woff2"),
+        url("/fonts/FKGrotesk-Medium.woff") format("woff"),
+        url("/fonts/FKGrotesk-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Avenue X";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/fonts/AvenueX-Regular.woff2") format("woff2"),
+        url("/fonts/AvenueX-Regular.woff") format("woff"),
+        url("/fonts/AvenueX-Regular.ttf") format("truetype");
+}
+
 :root {
-    --color-black: #333;
-    --color-gray-light: #f2f6f7;
     --color-gray-medium: #a2a4a6;
-    --color-larq-blue: #0A1D3C;
-    --color-plumerai-blue: #76c7f4;
+    --color-plumerai-dark-blue: #102040;
 }
 
 body {
-    color: var(--color-black);
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
+    color: #000000;
+    font-family: "FK Grotesk", sans-serif;
     margin: 0;
 }
 
-h1, h2 {
+h1 {
+    font-family: "Avenue X", serif;
+}
+
+h1,
+h2 {
     margin: 0;
 }
 
-a {
-    color: var(--color-larq-blue);
-    text-decoration: none;
+a,
+a:visited {
+    color: var(--color-plumerai-dark-blue);
 }
 
 strong {
@@ -32,29 +82,15 @@ strong {
     margin: 0 auto;
 }
 
-.header {
-    background-color: var(--color-gray-light);
-    padding: 3rem 0;
+header {
+    background-color: var(--color-plumerai-dark-blue);
+    padding: 2.5rem 0;
 }
 
-.header>div {
-    display: flex;
-    align-items: center;
-}
-
-.header h1 {
-    margin: 0;
-    padding-bottom: 0.4rem;
-}
-
-.header h1>a {
-    font-size: 1.9rem;
-    font-weight: 500;
+header h1 > a,
+header h1 > a:visited {
+    color: #ffffff;
     text-decoration: none;
-}
-
-.header a {
-    border-bottom: none;
 }
 
 .content {
@@ -65,20 +101,24 @@ strong {
 .content img {
     width: 100%;
 }
-
 .content img.hero {
     margin-bottom: 2rem;
 }
 
-.content h1>a {
-    font-size: 1.6rem;
+.content h1 {
+    font-size: 1.625rem;
     font-weight: 700;
+}
+.content h1 > a {
+    text-decoration: none;
 }
 
 .content h2 {
     color: var(--color-gray-medium);
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 0.1875rem;
 }
 
 .content p.date {
@@ -89,41 +129,12 @@ strong {
 }
 
 .content p {
-    line-height: 1.4rem;
-}
-
-.content a {
-    font-weight: 400;
-    border-bottom: 0.1em solid var(--color-plumerai-blue);
-    display: inline-block;
-    line-height: 0.9em;
-    text-shadow: 0.1em 0.1em white, 0.1em -0.1em white, -0.1em 0.1em white, -0.1em -0.1em white;
-}
-
-.content a:hover {
-    border-bottom: 0.1em solid var(--color-larq-blue);
-}
-
-.content a:visited {
-    color: var(--color-larq-blue);
+    line-height: 150%;
+    font-weight: 100;
 }
 
 @media screen and (max-width: 30rem) {
-    .header {
-        padding: 2rem 0;
-    }
-    .header img {
-        height: 2.5rem;
-    }
-    .header h1 {
-        padding-bottom: 0.7rem;
-        line-height: 1.7rem;
-    }
-    .header h1>a {
-        font-size: 1.4rem;
-    }
-    .content h1>a {
-        border-bottom: none;
-        line-height: 1.2em;
+    header {
+        padding: 1.75rem 0;
     }
 }
