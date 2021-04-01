@@ -5,3 +5,6 @@ theme = "plumerai-blog"
 
 [permalinks]
   blog = ":year/:month/:filename/"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
