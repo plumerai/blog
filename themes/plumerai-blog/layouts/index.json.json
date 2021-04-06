@@ -2,7 +2,8 @@
 {{- range (where .Site.RegularPages.ByTitle "Section" "blog").ByDate.Reverse -}}
     {{- $.Scratch.Add "items"
         (slice
-            (dict "title" .Title
+            (dict "permalink" .Permalink
+                  "title" .Title
                   "subtitle" .Params.subTitle
                   "date" (dateFormat "Monday, January 2, 2006" .Params.date)
                   "heroImage" (cond (gt (len .Params.heroImage) 0) (.Params.heroImage | absURL) "")
