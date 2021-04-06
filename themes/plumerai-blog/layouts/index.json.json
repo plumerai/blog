@@ -5,7 +5,8 @@
             (dict "title" .Title
                   "subtitle" .Params.subTitle
                   "date" (dateFormat "Monday, January 2, 2006" .Params.date)
-                  "heroImage" .Params.heroImage "socialImage" .Params.socialImage)) -}}
+                  "heroImage" (cond (gt (len .Params.heroImage) 0) (.Params.heroImage | absURL) "")
+                  "socialImage" (cond (gt (len .Params.socialImage) 0) (.Params.socialImage | absURL) ""))) -}}
 {{- end -}}
 {{- .Scratch.SetInMap "output" "data" (.Scratch.Get "items") -}}
 {{- .Scratch.Get "output" | jsonify (dict "indent" "    ") -}}
