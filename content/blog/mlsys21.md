@@ -29,7 +29,7 @@ However, this requires the people building BNNs to have access to real, empirica
 Lacking the right tools, researchers too often refrain to proxy metrics such as the number of FLOPs.
 LCE aims to change this.
 
-In the paper, we demonstrate the value of measuring latency directly by analyzing the execution of some of the best existing BNN designs, such as R2B and BinaryDenseNets.
+In the paper, we demonstrate the value of measuring latency directly by analyzing the execution of some of the best existing BNN designs, such as [R2B](https://arxiv.org/abs/2003.11535) and [BinaryDenseNets](https://openaccess.thecvf.com/content_ICCVW_2019/html/NeurArch/Bethge_BinaryDenseNet_Developing_an_Architecture_for_Binary_Neural_Networks_ICCVW_2019_paper.html).
 We identify suboptimal points in these models and present QuickNet, a new model family which outperforms all existing BNNs on ImageNet in terms of latency and accuracy.
 
 ![Breakdown of QuickNet latency](/images/mlsys21/quicknet-breakdown.svg)
