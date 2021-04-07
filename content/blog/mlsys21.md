@@ -6,7 +6,7 @@ date: 2021-04-07T00:05:36+02:00
 draft: false
 socialTitle: "MLSys 2021: Design, Benchmark, and Deploy Binarized Neural Networks with LCE"
 socialDescription: "We are very excited to present our paper about Larq Compute Engine at MLSys 2021!"
-socialImage: ""
+socialImage: "images/mlsys21/mlsys-announcement-social.png"
 ---
 
 We are very excited to present our paper [Larq Compute Engine: Design, Benchmark, and Deploy State-of-the-Art Binarized Neural Networks](https://proceedings.mlsys.org/paper/2021/file/c7e1249ffc03eb9ded908c236bd1996d-Paper.pdf) at the [MLSys 2021](https://mlsys.org/) conference this week!
