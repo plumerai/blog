@@ -16,7 +16,7 @@ We are very excited to present our paper [Larq Compute Engine: Design, Benchmark
 In the [paper](https://proceedings.mlsys.org/paper/2021/file/c7e1249ffc03eb9ded908c236bd1996d-Paper.pdf), we discuss the design of LCE and go into the technical details behind the framework. LCE was designed for usability and performance. It extends TensorFlow Lite, which makes it possible to integrate binarized layers into virtually any neural network and run it with LCE. Integration with [Larq](https://docs.larq.dev/larq/) makes it very easy to move from training to deployment. And thanks to our hand-optimized inference kernels and sophisticated MLIR-based graph optimizations, inference speed is phenomenal.
 
 ![12x - 17x speedup from binarization](/images/mlsys21/binarization-speedup.png)
-_The impact of binarization on latency for the four different convolutional blocks in ResNets - binary is up to 17x faster than 32-bit floating point and 12x faster than 8-bit integers._
+_The impact of binarization on the latency of different convolutional blocks in ResNets - binary is up to 17x faster than 32-bit floating point and 12x faster than 8-bit integers on a Pixel 1 phone._
 
 BNNs are all about efficient inference: their tiny memory footprint and compact bitwise computations make them perfect for edge applications and small, battery powered devices. However, this requires the people building BNNs to have access to real, empirical measurements of their model as it is deployed. Lacking the right tools, researchers too often refrain to proxy metrics such as the number of FLOPs. LCE aims to change this.
 
