@@ -21,7 +21,7 @@ It extends [TensorFlow Lite](https://www.tensorflow.org/lite), which makes it po
 Integration with [Larq](https://docs.larq.dev/larq/) makes it very easy to move from training to deployment.
 And thanks to our hand-optimized inference kernels and sophisticated MLIR-based graph optimizations, inference speed is phenomenal.
 
-![12x - 17x speedup from binarization](/images/mlsys21/binarization-speedup.png)
+![12x - 17x speedup from binarization](/images/mlsys21/binarization-speedup.svg)
 _The impact of binarization on the latency of different convolutional blocks in ResNets - binary is up to 17x faster than 32-bit floating point and 12x faster than 8-bit integers on a Pixel 1 phone._
 
 BNNs are all about efficient inference: their tiny memory footprint and compact bitwise computations make them perfect for edge applications and small, battery powered devices.
@@ -32,7 +32,7 @@ LCE aims to change this.
 In the paper, we demonstrate the value of measuring latency directly by analyzing the execution of some of the best existing BNN designs, such as R2B and BinaryDenseNets.
 We identify suboptimal points in these models and present QuickNet, a new model family which outperforms all existing BNNs on ImageNet in terms of latency and accuracy.
 
-![Breakdown of QuickNet latency](/images/mlsys21/quicknet-breakdown.png)
+![Breakdown of QuickNet latency](/images/mlsys21/quicknet-breakdown.svg)
 _Breakdown of the latency of QuickNet-Large (QNL), our new state-of-the-art BNN.
 Note how compared to Real-to-Binary Net (R2B) and BinaryDenseNet, we win mostly on the high-precision first layer and ‘glue’ layers._
 
