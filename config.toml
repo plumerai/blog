@@ -1,4 +1,4 @@
-baseURL = "https://blog.plumerai.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Plumerai Blog"
 theme = "plumerai-blog"
