@@ -13,6 +13,4 @@ At this year’s tinyML Summit, we presented our new solution for person detecti
 
 Watch the video below to see the live demo and learn how Binarized Neural Networks are an integral part of our solution.
 
-{{< rawhtml >}}
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/ydMq9ZRfiMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-{{< /rawhtml >}}
+{{< youtube ydMq9ZRfiMw >}}
