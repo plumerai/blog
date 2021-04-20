@@ -1,4 +1,1 @@
-<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="160" height="160" fill="#102040"/>
-<path d="M110 40V100H70V120H50V60H70V80H90V60H70V40H110Z" fill="#4080FF"/>
-</svg>
+<svg fill="none" height="160" viewBox="0 0 160 160" width="160" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h160v160h-160z" fill="#102040"/><path d="m110 40v60h-40v20h-20v-60h20v20h20v-20h-20v-20z" fill="#4080ff"/></svg>
