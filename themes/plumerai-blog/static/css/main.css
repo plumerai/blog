@@ -82,17 +82,6 @@ strong {
     margin: 0 auto;
 }
 
-header {
-    background-color: var(--color-plumerai-dark-blue);
-    padding: 2.5rem 0;
-}
-
-header h1 > a,
-header h1 > a:visited {
-    color: #ffffff;
-    text-decoration: none;
-}
-
 .content {
     margin-top: 2rem;
     margin-bottom: 4rem;
@@ -133,8 +122,274 @@ header h1 > a:visited {
     font-weight: 100;
 }
 
-@media screen and (max-width: 30rem) {
+/**
+ * Header
+ */
+
+html {
+    margin-top: 5rem;
+}
+
+header {
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    margin: 1.25rem;
+    height: 2.5rem;
+    position: absolute;
+}
+
+header img#logo {
+    z-index: 100;
+}
+
+header img#logo-blog {
+    z-index: 0;
+}
+
+header .right {
+    float: right;
+}
+
+header nav#links {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+}
+
+header nav#links ul {
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav#links ul li {
+    float: left;
+    margin: 0 1rem;
+    line-height: 5rem;
+}
+
+header nav#links ul li:last-child {
+    margin-right: 2rem;
+    color: #4080ff;
+}
+
+header nav#links ul a {
+    height: 100%;
+    display: inline-block;
+    color: unset;
+    text-decoration: none;
+}
+
+header nav#links ul a:hover {
+    color: unset;
+    cursor: pointer;
+}
+
+header nav#links #nav-underline {
+    width: 1px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0.5px;
+    background-color: #4080ff;
+    transition: height 0.25s;
+}
+
+header nav#links #nav-underline.active {
+    height: 0.25rem;
+}
+
+header #hamburger-menu-button {
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@media (max-width: 70rem) {
+    html {
+        margin-top: 4.5rem;
+    }
     header {
-        padding: 1.75rem 0;
+        height: 4.5rem;
+    }
+    header img {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 45rem) {
+    header nav#links ul li {
+        float: unset;
+    }
+    header nav#links #nav-underline {
+        display: none;
+    }
+    header #hamburger-menu-button {
+        display: block;
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 1rem;
+    }
+    header nav#links {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 100%;
+        bottom: 0;
+        padding-top: 4.5rem;
+        color: #fff;
+        background-color: #000816;
+        transform: translateX(5%);
+        transition: transform 0.5s;
+    }
+    header nav#links ul {
+        overflow-y: auto;
+    }
+    header nav#links ul li {
+        margin: 3rem 1.5rem;
+        font-size: 2rem;
+        line-height: 120%;
+    }
+    header.hamburger-menu-open nav#links {
+        transform: translateX(-100%);
+    }
+}
+
+/**
+ * Footer
+ */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    color: #fff;
+    background-color: #000816;
+}
+
+footer .container {
+    width: 100%;
+    max-width: 76rem;
+}
+
+footer img,
+footer nav,
+footer .column {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer nav {
+    margin-left: 10rem;
+    margin-bottom: 6rem;
+}
+
+footer nav .column {
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    padding: 0.75rem 0;
+    font-size: 1.125rem;
+}
+
+footer nav ul a,
+footer nav ul a:visited {
+    color: unset;
+    text-decoration: none;
+}
+
+footer nav ul a:hover {
+    color: unset;
+    text-decoration: underline;
+}
+
+footer nav img {
+    padding: 0.75rem;
+}
+
+footer #sub-footer {
+    padding-top: 1rem;
+    margin-bottom: 4rem;
+    color: #666;
+    border-top: 2px solid #333;
+}
+
+footer #sub-footer p,
+footer #sub-footer a {
+    margin: 0;
+    display: inline-block;
+}
+
+footer #sub-footer a {
+    margin-left: 1.5rem;
+    float: right;
+    color: unset;
+    text-decoration: none;
+}
+
+footer #sub-footer a:hover {
+    color: unset;
+    text-decoration: underline;
+}
+
+@media (max-width: 50rem) {
+    footer {
+        padding-top: 4rem;
+    }
+    footer img,
+    footer nav,
+    footer .column {
+        display: block;
+    }
+    footer nav {
+        display: block;
+        margin-left: 0;
+        margin-top: 4rem;
+    }
+    footer nav img {
+        padding: 0.75rem 0;
+    }
+}
+
+@media (max-width: 70rem) {
+    footer {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    footer #sub-footer {
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    footer #sub-footer p,
+    footer #sub-footer a {
+        margin: 0;
+        margin-bottom: 1.5rem;
+        display: block;
+        float: unset;
     }
 }
