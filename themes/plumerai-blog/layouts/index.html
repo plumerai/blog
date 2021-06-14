@@ -1,12 +1,18 @@
 {{ define "main" }}
 
-{{ range (where .Site.RegularPages.ByTitle "Section" "blog").ByDate.Reverse }}
-<div class="centered-column content">
+{{ $allPosts := (where .Site.RegularPages.ByTitle "Section" "blog").ByDate.Reverse }}
+{{ $lastPost := index (last 1 $allPosts) 0 }}
+
+{{ range $allPosts }}
+<div class="blog-post">
+    <p class="date">{{ dateFormat "Monday, January 2, 2006" .Params.date }}</p>
     <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
     <h2>{{ .Params.subTitle }}</h2>
-    <p class="date">{{ dateFormat "Monday, January 2, 2006" .Params.date }}</p>
     {{ .Content }}
 </div>
+{{ if ne $lastPost.Permalink .Permalink }}
+<hr>
+{{ end }}
 {{ end }}
 
 {{ end}}
