@@ -168,11 +168,11 @@ header img {
     position: absolute;
 }
 
-header img#logo {
+header img#logo-icon {
     z-index: 100;
 }
 
-header img#logo-blog {
+header img#logo {
     z-index: 0;
 }
 
