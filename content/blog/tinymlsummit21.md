@@ -1,10 +1,10 @@
 ---
-title: "tinyML Summit 2021: Person Detection under Extreme Constraints - Lessons from the Field"
+title: "tinyML Summit 2021: Person Detection under Extreme Constraints — Lessons from the Field"
 subtitle: ""
 heroImage: ""
 date: 2021-04-20T14:13:38+02:00
 draft: false
-socialTitle: "tinyML Summit 2021: Person Detection under Extreme Constraints - Lessons from the Fieldit21"
+socialTitle: "tinyML Summit 2021: Person Detection under Extreme Constraints — Lessons from the Field"
 socialDescription: "At this year’s tinyML Summit, we presented our new solution for person detection with bounding boxes for Arm Cortex M"
 socialImage: "images/tinymlsummit21_social.jpg"
 ---
